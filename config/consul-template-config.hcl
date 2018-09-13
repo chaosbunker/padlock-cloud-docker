@@ -7,9 +7,3 @@ template {
   destination = "/padlock/config.yml"
   perms       = 0400
 }
-
-template {
-  source      = "/padlock/whitelist.ctmpl"
-  destination = "/padlock/whitelist"
-  perms       = 0400
-}

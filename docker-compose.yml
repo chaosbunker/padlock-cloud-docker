@@ -6,10 +6,10 @@ services:
       - "5555:5555"
     volumes:
       - padlock-data:/padlock/db
+      - ./config/whitelist:/padlock/whitelist
     network_mode: bridge
     environment:
       BASE_URL: "http://localhost"
-      WHITELIST: "hello@example.com"
 
 volumes:
   padlock-data:

@@ -18,7 +18,6 @@ RUN apk --no-cache add git ca-certificates && \
   apk --no-cache del --purge git
 
 ADD config/config.yml.ctmpl /padlock/
-ADD config/whitelist.ctmpl /padlock/
 ADD config/consul-template-config.hcl /padlock/
 
 EXPOSE 5555
